@@ -133,6 +133,8 @@
 (global-set-key [(shift f3)] 'highlight-symbol-prev)
 (global-set-key [(meta f3)] 'highlight-symbol-query-replace)
 
+(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
+
 ;; ---------------------------
 ;; -- JS Mode configuration --
 ;; ---------------------------
@@ -148,13 +150,13 @@
 ;; https://github.com/bbatsov/zenburn-emacs
 (load-theme 'zenburn t)
 
-;; To get the “M-y immediately pulls up the kill ring” behavior
+;; “M-y immediately pulls up the kill ring” behavior
 (require 'browse-kill-ring)
  (browse-kill-ring-default-keybindings)
 
 (require 'yasnippet)
 (yas-global-mode 1)
 
-(require 'haskell-mode)
-
 (require 'magit)
+
+(require 'haskell-mode)
