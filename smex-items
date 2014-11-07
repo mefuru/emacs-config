@@ -1,0 +1,16 @@
+
+;; ----- smex-history -----
+(
+ auto-fill-mode
+ cd
+ 5x5
+ arp
+ dbx
+ dig
+ erc
+)
+
+;; ----- smex-data -----
+(
+ (auto-fill-mode . 1)
+)

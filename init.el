@@ -15,7 +15,7 @@
 ;; ido comes with new emacs
 (ido-mode t) ;; auto-completes file-names etc
 (setq ido-enable-flex-matching t) ;; enables fuzzy matching
-;; (menu-bar-mode -1)
+(menu-bar-mode -1)
 (normal-erase-is-backspace-mode 1)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
@@ -182,3 +182,13 @@
         (when matching-text (message matching-text))))
 
 (show-paren-mode 1)
+
+;; Smex is a M-x enhancement for Emacs. Built on top of Ido, it provides a
+;; convenient interface to your recently and most frequently used commands.
+
+(require 'smex)
+(smex-initialize)
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
