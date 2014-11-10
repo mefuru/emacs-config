@@ -1,16 +1,18 @@
 
 ;; ----- smex-history -----
 (
+ package-install
+ ansi-term
  auto-fill-mode
  cd
  5x5
  arp
  dbx
- dig
- erc
 )
 
 ;; ----- smex-data -----
 (
  (auto-fill-mode . 1)
+ (ansi-term . 8)
+ (package-install . 1)
 )
