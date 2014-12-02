@@ -1,0 +1,7 @@
+# -*- mode: snippet -*-
+#name : map
+# --
+
+$0.map(function() {
+  
+});

@@ -1,18 +1,27 @@
 
 ;; ----- smex-history -----
 (
- package-install
+ back-to-indentation
+ replace-string
  ansi-term
- auto-fill-mode
- cd
- 5x5
- arp
- dbx
+ load-theme
+ package-install
+ whitespace-mode
+ whitespace-cleanup
 )
 
 ;; ----- smex-data -----
 (
  (auto-fill-mode . 1)
- (ansi-term . 8)
- (package-install . 1)
+ (ansi-term . 29)
+ (package-install . 2)
+ (replace-string . 29)
+ (replace-regexp . 7)
+ (delete-backward-char . 2)
+ (ac-complete-yasnippet . 5)
+ (make-directory . 1)
+ (whitespace-mode . 4)
+ (whitespace-cleanup . 3)
+ (load-theme . 1)
+ (back-to-indentation . 3)
 )

@@ -10,10 +10,9 @@
 (require 'linum)
 (require 'smooth-scrolling)
 (require 'whitespace)
-˘(require 'dired-x)
+(require 'dired-x)
 (require 'compile)
-;; ido comes with new emacs
-(ido-mode t) ;; auto-completes file-names etc
+(ido-mode t) ;; auto-completes file-names etc, ido comes with new emacs now
 (setq ido-enable-flex-matching t) ;; enables fuzzy matching
 (menu-bar-mode -1)
 (normal-erase-is-backspace-mode 1)
@@ -70,29 +69,21 @@
 (global-set-key "\M-h" 'backward-delete-word)
 (global-set-key "\M-u" 'zap-to-char)
 
-;; ELPA (emacs lisp package archive)
-(when (>= emacs-major-version 24)
-  (require 'package)
-  (package-initialize)
-  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
-  )
-
 ;; http://www.emacswiki.org/emacs/BackspaceKey
 (global-set-key (kbd "C-?") 'help-command)
 (global-set-key (kbd "M-?") 'mark-paragraph)
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "M-h") 'backward-kill-word)
 
-;; OSX modifier keys
-;; can also temporarily swap them with C-c w
-(setq mac-command-modifier 'meta)
-(setq mac-option-modifier 'super)
+(global-set-key [delete] 'delete-char)
+(global-set-key [M-delete] 'kill-word)
 
-;;; I prefer cmd key for meta
-(setq mac-option-key-is-meta nil
-      mac-command-key-is-meta t
-      mac-command-modifier 'meta
-      mac-option-modifier 'none)
+;; ELPA (emacs lisp package archive)
+(when (>= emacs-major-version 24)
+  (require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
+  )
 
 ;; cycling through windows in one keychord
 (global-set-key (kbd "C-S-b") 'other-window) ; TRY ace-jump
@@ -147,8 +138,6 @@
 ;; ---------------------------
 ;; -- Load MELPA Packages --
 ;; ---------------------------
-;; https://github.com/bbatsov/zenburn-emacs
-(load-theme 'zenburn t)
 
 ;; “M-y immediately pulls up the kill ring” behavior
 (require 'browse-kill-ring)
@@ -237,3 +226,66 @@
 
 (global-set-key [M-S-up] 'move-text-up)
 (global-set-key [M-S-down] 'move-text-down)
+
+;; Backspace wasn't deleting previously
+(normal-erase-is-backspace-mode 0)
+
+;; disable the bell entirely
+(setq ring-bell-function 'ignore)
+
+
+;; ---------------------------
+;; -- Colour themes --
+;; ---------------------------
+
+(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(load-theme 'zenburn t)
+
+;; --------------------------- Javascript Syntax Checking -- ;;
+;; -- http://blog.deadpansincerity.com/2011/05/setting-up-emacs-as-a-javascript-editing-environment-for-fun-and-profit/
+;; -- -------------------------
+
+;; Nice Flymake minibuffer messages
+(require 'flymake-cursor)
+
+(add-to-list 'load-path "~/.emacs.d/lintnode")
+(require 'flymake-jslint)
+;; Make sure we can find the lintnode executable
+(setq lintnode-location "~/emacs.d/lintnode")
+;; JSLint can be... opinionated
+(setq lintnode-jslint-excludes (list 'nomen 'undef 'plusplus 'onevar 'white))
+;; Start the server when we first open a js file and start checking
+(add-hook 'js-mode-hook
+          (lambda ()
+            (lintnode-hook)))
+
+
+;; Navigate to the beginning of the line
+;; -- http://emacsredux.com/blog/2013/05/22/smarter-navigation-to-the-beginning-of-a-line/
+
+(defun smarter-move-beginning-of-line (arg)
+  "Move point back to indentation of beginning of line.
+
+Move point to the first non-whitespace character on this line.
+If point is already there, move to the beginning of the line.
+Effectively toggle between the first non-whitespace character and
+the beginning of the line.
+
+If ARG is not nil or 1, move forward ARG - 1 lines first.  If
+point reaches the beginning or end of the buffer, stop there."
+  (interactive "^p")
+  (setq arg (or arg 1))
+
+  ;; Move lines first
+  (when (/= arg 1)
+    (let ((line-move-visual nil))
+      (forward-line (1- arg))))
+
+  (let ((orig-point (point)))
+    (back-to-indentation)
+    (when (= orig-point (point))
+      (move-beginning-of-line 1))))
+
+;; remap C-a to `smarter-move-beginning-of-line'
+(global-set-key [remap move-beginning-of-line]
+                'smarter-move-beginning-of-line)

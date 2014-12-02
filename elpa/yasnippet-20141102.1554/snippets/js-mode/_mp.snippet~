@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+#name: _.map
+#key: _mp
+# --
+_.map($1, function($2){$0 });
