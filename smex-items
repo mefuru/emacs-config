@@ -1,27 +1,50 @@
 
 ;; ----- smex-history -----
 (
- back-to-indentation
+ javascript-mode
+ newline
+ backward-char
+ end-of-line
+ make-directory
+ mkdir
  replace-string
- ansi-term
- load-theme
- package-install
- whitespace-mode
- whitespace-cleanup
 )
 
 ;; ----- smex-data -----
 (
  (auto-fill-mode . 1)
- (ansi-term . 29)
- (package-install . 2)
- (replace-string . 29)
- (replace-regexp . 7)
+ (ansi-term . 52)
+ (package-install . 12)
+ (replace-string . 107)
+ (replace-regexp . 9)
  (delete-backward-char . 2)
- (ac-complete-yasnippet . 5)
- (make-directory . 1)
- (whitespace-mode . 4)
- (whitespace-cleanup . 3)
+ (ac-complete-yasnippet . 7)
+ (make-directory . 13)
+ (whitespace-mode . 17)
+ (whitespace-cleanup . 10)
  (load-theme . 1)
  (back-to-indentation . 3)
+ (magit-log . 2)
+ (magit-status . 1)
+ (move-line-up . 1)
+ (flymake-mode . 2)
+ (lintnode-start . 1)
+ (flycheck-mode . 8)
+ (global-flycheck-mode . 1)
+ (flycheck-buffer . 2)
+ (hs-hide-block . 3)
+ (run-js . 1)
+ (multi-term . 5)
+ (menu-bar-mode . 1)
+ (kill-whole-line . 1)
+ (web-mode . 12)
+ (mkdir . 3)
+ (delete-file . 3)
+ (blink-cursor-mode . 1)
+ (package-refresh-contents . 1)
+ (cider-jack-in . 1)
+ (end-of-line . 1)
+ (backward-char . 1)
+ (newline . 1)
+ (javascript-mode . 1)
 )

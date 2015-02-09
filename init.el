@@ -1,7 +1,9 @@
 ;; ---------------------
 ;; -- Global Settings --
 ;; ---------------------
-(add-to-list 'load-path "~/.emacs.d")
+(add-to-list 'load-path "/Users/mehulmandania/.emacs.d")
+(setq default-directory "/Users/mehulmandania/Dropbox/sandbox/")
+
 (require 'cl)
 (require 'ffap)
 (require 'uniquify)
@@ -14,7 +16,7 @@
 (require 'compile)
 (ido-mode t) ;; auto-completes file-names etc, ido comes with new emacs now
 (setq ido-enable-flex-matching t) ;; enables fuzzy matching
-(menu-bar-mode -1)
+;; (menu-bar-mode -1)
 (normal-erase-is-backspace-mode 1)
 (put 'downcase-region 'disabled nil)
 (put 'upcase-region 'disabled nil)
@@ -37,20 +39,40 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:inherit autoface-default :strike-through nil :underline nil :slant normal :weight normal :height 120 :width normal :family "monaco"))))
- '(column-marker-1 ((t (:background "red"))))
+ '(column-marker-1 ((t (:background "red"))) t)
  '(diff-added ((t (:foreground "cyan"))))
  '(flymake-errline ((((class color) (background light)) (:background "Red"))))
  '(font-lock-comment-face ((((class color) (min-colors 8) (background light)) (:foreground "red"))))
- '(fundamental-mode-default ((t (:inherit default))))
+ '(fundamental-mode-default ((t (:inherit default))) t)
  '(highlight ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
  '(isearch ((((class color) (min-colors 8)) (:background "yellow" :foreground "black"))))
  '(linum ((t (:foreground "black" :weight bold))))
  '(region ((((class color) (min-colors 8)) (:background "white" :foreground "magenta"))))
  '(secondary-selection ((((class color) (min-colors 8)) (:background "gray" :foreground "cyan"))))
  '(show-paren-match ((((class color) (background light)) (:background "black"))))
- '(vertical-border ((t nil)))
-)
+ '(vertical-border ((t nil))))
 
+;; -------------------------------
+;; --- JS SHORTCUT DEFINITIONS ---
+;; -------------------------------
+
+;; inserts js/clj log call and puts cursor between brackets
+(defun insert-print ()
+  (interactive)
+  (insert "console.log();")
+  (backward-char)(backward-char))
+
+;; inserts js function declaration and moves cursor to body
+(defun js-insert-function ()
+  (interactive)
+  (insert "function() {}")
+  (backward-char))
+
+;; inserts js throw if error in callback
+(defun js-throw-error () 
+  (interactive)
+  (insert "if (err) throw err;"))
+  
 ;; ------------
 ;; -- Macros --
 ;; ------------
@@ -77,6 +99,20 @@
 
 (global-set-key [delete] 'delete-char)
 (global-set-key [M-delete] 'kill-word)
+
+(global-set-key (kbd "C-c <right>") 'hs-show-block)
+(global-set-key (kbd "C-c <left>")  'hs-hide-block)
+(global-set-key (kbd "C-c <up>")    'hs-hide-all)
+(global-set-key (kbd "C-c <down>")  'hs-show-all)
+
+(global-set-key (kbd "M-x") 'smex)
+(global-set-key (kbd "M-X") 'smex-major-mode-commands)
+;; This is your old M-x.
+(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
+
+(global-set-key (read-kbd-macro "C-x l") 'insert-print) ;; insert console.log()
+(global-set-key (read-kbd-macro "C-x f") 'js-insert-function)
+(global-set-key (read-kbd-macro "C-x e") 'js-throw-error)
 
 ;; ELPA (emacs lisp package archive)
 (when (>= emacs-major-version 24)
@@ -108,6 +144,12 @@
 (global-set-key (kbd "S-C-<down>") 'shrink-window)
 (global-set-key (kbd "S-C-<up>") 'enlarge-window)
 
+;; Backspace wasn't deleting previously
+(normal-erase-is-backspace-mode 0)
+
+;; disable the bell entirely
+(setq ring-bell-function 'ignore)
+
 ;; http://emacs-fu.blogspot.co.uk/2009/12/scrolling.html
 (set-frame-parameter (selected-frame) 'scroll-bar-width nil)
 
@@ -124,13 +166,10 @@
 (global-set-key [(shift f3)] 'highlight-symbol-prev)
 (global-set-key [(meta f3)] 'highlight-symbol-query-replace)
 
-(add-hook 'haskell-mode-hook 'haskell-indentation-mode)
-
 ;; ---------------------------
 ;; -- JS Mode configuration --
 ;; ---------------------------
 (load "js-config.el")
-
 (require 'auto-complete-config)
 (ac-config-default)
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/elpa/auto-complete-20141103.105/dict")
@@ -144,19 +183,11 @@
  (browse-kill-ring-default-keybindings)
 
 (require 'yasnippet)
-(yas-global-mode 1)
+(yas-global-mode 1)(require 'magit)
 
-(require 'magit)
-
-(require 'haskell-mode)
-
-;; ---------------------------
-;; -- Paren highlighting --
-;; ---------------------------
-
-;; See matching pairs of parentheses and other characters. When point is on one of the paired characters, the other is highlighted. 
-
-;; Show the matching paren when it is offscreen
+;; ---------------------------------------------------------
+;; ------------------- Paren highlighting ------------------
+;; ---------------------------------------------------------
 
 (defadvice show-paren-function
       (after show-matching-paren-offscreen activate)
@@ -172,107 +203,32 @@
 
 (show-paren-mode 1)
 
+;; ---------------------------------------------------------
+;; --------------------------- SMEX ------------------------
+;; ---------------------------------------------------------
+
 ;; Smex is a M-x enhancement for Emacs. Built on top of Ido, it provides a
 ;; convenient interface to your recently and most frequently used commands.
 
 (require 'smex)
 (smex-initialize)
-(global-set-key (kbd "M-x") 'smex)
-(global-set-key (kbd "M-X") 'smex-major-mode-commands)
-;; This is your old M-x.
-(global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
-
-
-;; move-text package installed from MELPA
-(defun move-text-internal (arg)
-  (cond
-   ((and mark-active transient-mark-mode)
-    (if (> (point) (mark))
-        (exchange-point-and-mark))
-    (let ((column (current-column))
-          (text (delete-and-extract-region (point) (mark))))
-      (forward-line arg)
-      (move-to-column column t)
-      (set-mark (point))
-      (insert text)
-      (exchange-point-and-mark)
-      (setq deactivate-mark nil)))
-   (t
-    (let ((column (current-column)))
-      (beginning-of-line)
-      (when (or (> arg 0) (not (bobp)))
-        (forward-line)
-        (when (or (< arg 0) (not (eobp)))
-          (transpose-lines arg)
-          (when (and (eval-when-compile
-                       '(and (>= emacs-major-version 24)
-                             (>= emacs-minor-version 3)))
-                     (< arg 0))
-            (forward-line -1)))
-        (forward-line -1))
-      (move-to-column column t)))))
-
-(defun move-text-down (arg)
-  "Move region (transient-mark-mode active) or current line
-  arg lines down."
-  (interactive "*p")
-  (move-text-internal arg))
-
-(defun move-text-up (arg)
-  "Move region (transient-mark-mode active) or current line
-  arg lines up."
-  (interactive "*p")
-  (move-text-internal (- arg)))
-
-(global-set-key [M-S-up] 'move-text-up)
-(global-set-key [M-S-down] 'move-text-down)
-
-;; Backspace wasn't deleting previously
-(normal-erase-is-backspace-mode 0)
-
-;; disable the bell entirely
-(setq ring-bell-function 'ignore)
-
 
 ;; ---------------------------
 ;; -- Colour themes --
 ;; ---------------------------
 
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+(add-to-list 'custom-theme-load-path "/Users/mehulmandania/.emacs.d/themes")
 (load-theme 'zenburn t)
+;; (load-theme 'blackboard t)
+;; (load-theme 'solarized-dark t)
+(set-default-font "-apple-Menlo-medium-normal-normal-*-14-*-*-*-m-0-iso10646-")
 
-;; --------------------------- Javascript Syntax Checking -- ;;
-;; -- http://blog.deadpansincerity.com/2011/05/setting-up-emacs-as-a-javascript-editing-environment-for-fun-and-profit/
-;; -- -------------------------
-
-;; Nice Flymake minibuffer messages
-(require 'flymake-cursor)
-
-(add-to-list 'load-path "~/.emacs.d/lintnode")
-(require 'flymake-jslint)
-;; Make sure we can find the lintnode executable
-(setq lintnode-location "~/emacs.d/lintnode")
-;; JSLint can be... opinionated
-(setq lintnode-jslint-excludes (list 'nomen 'undef 'plusplus 'onevar 'white))
-;; Start the server when we first open a js file and start checking
-(add-hook 'js-mode-hook
-          (lambda ()
-            (lintnode-hook)))
-
-
-;; Navigate to the beginning of the line
+;; -----------------------------------
+;; -------------------- Navigate to the beginning of the line ---------------
 ;; -- http://emacsredux.com/blog/2013/05/22/smarter-navigation-to-the-beginning-of-a-line/
+;; -----------------------------------
 
 (defun smarter-move-beginning-of-line (arg)
-  "Move point back to indentation of beginning of line.
-
-Move point to the first non-whitespace character on this line.
-If point is already there, move to the beginning of the line.
-Effectively toggle between the first non-whitespace character and
-the beginning of the line.
-
-If ARG is not nil or 1, move forward ARG - 1 lines first.  If
-point reaches the beginning or end of the buffer, stop there."
   (interactive "^p")
   (setq arg (or arg 1))
 
@@ -289,3 +245,68 @@ point reaches the beginning or end of the buffer, stop there."
 ;; remap C-a to `smarter-move-beginning-of-line'
 (global-set-key [remap move-beginning-of-line]
                 'smarter-move-beginning-of-line)
+
+;; ---------------------------------------------------------
+;; ------ http://www.emacswiki.org/emacs/move-text.el ------
+;; ---------------------------------------------------------
+(require 'move-text)
+(move-text-default-bindings)
+
+;; permanently enable Flycheck
+(add-hook 'after-init-hook #'global-flycheck-mode)
+(require 'flycheck)
+(add-hook 'js-mode-hook
+          (lambda () (flycheck-mode t)))
+
+;; ---------------------------------------------------------
+;; ---------------  Code folding ---------------------------
+;; ---------------------------------------------------------
+
+(add-hook 'js-mode-hook
+          (lambda ()
+            ;; Scan the file for nested code blocks
+            (imenu-add-menubar-index)
+            ;; Activate the folding mode
+            (hs-minor-mode t)))
+
+
+;; Remove grey vertical borders on edges of Emacs screen
+(set-window-fringes nil 0 0) 
+
+(require 'saveplace)
+(setq-default save-place t)
+(setq save-place-file (concat "/Users/mehulmandania/.emacs/tmp"))
+
+;; ---------------------------------------------------------
+;; --------------- http://web-mode.org/  -------------------
+;; ---------------------------------------------------------
+
+(require 'web-mode)
+(add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
+
+
+(blink-cursor-mode 0)
+
+(require 'clojure-mode-extra-font-locking)
+
+;; Disable backups and autosaves
+(setq backup-inhibited t)
+(setq auto-save-default nil)
+
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(custom-safe-themes (quote ("3b819bba57a676edf6e4881bd38c777f96d1aa3b3b5bc21d8266fa5b0d0f1ebf" "fc5fcb6f1f1c1bc01305694c59a1a861b008c534cae8d0e48e4d5e81ad718bc6" "f641bdb1b534a06baa5e05ffdb5039fb265fde2764fbfd9a90b0d23b75f3936b" default)))
+ '(fci-rule-color "#383838")
+ '(vc-annotate-background "#2B2B2B")
+ '(vc-annotate-color-map (quote ((20 . "#BC8383") (40 . "#CC9393") (60 . "#DFAF8F") (80 . "#D0BF8F") (100 . "#E0CF9F") (120 . "#F0DFAF") (140 . "#5F7F5F") (160 . "#7F9F7F") (180 . "#8FB28F") (200 . "#9FC59F") (220 . "#AFD8AF") (240 . "#BFEBBF") (260 . "#93E0E3") (280 . "#6CA0A3") (300 . "#7CB8BB") (320 . "#8CD0D3") (340 . "#94BFF3") (360 . "#DC8CC3"))))
+ '(vc-annotate-very-old-color "#DC8CC3"))

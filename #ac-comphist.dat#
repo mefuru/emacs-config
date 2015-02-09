@@ -1,0 +1,471 @@
+
+((("formatPercentString" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("load" .
+   [1 0 0 0])
+  ("i" .
+   [1])
+  ("typeof" .
+   [2 0 0 0 0 0])
+  ("message" .
+   [1 0 0 0 1 1 0])
+  ("nextBackTick" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("Error" .
+   [0 0 0 1 0])
+  ("backodds" .
+   [0 0 0 0 3 0 0 0])
+  ("if" .
+   [2 0])
+  ("passedBookies" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("fn" .
+   [3 0])
+  ("expectedResult" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("returnedBookie" .
+   [0 0 0 0 0 0 0 0 2 0 0 0 0 0])
+  ("eql" .
+   [6 0 0])
+  ("passedBookie" .
+   [0 0 0 1 1 1 0 3 1 0 0 0])
+  ("allBookies" .
+   [0 0 0 0 4 0 0 0 0 0])
+  ("all" .
+   [2 0 0])
+  ("equal" .
+   [0 0 1 0 0])
+  ("should" .
+   [3 0 0 3 2 0])
+  ("getBookiesArray" .
+   [0 0 0 0 3 0 0 0 0 0 0 0 0 0 0])
+  ("done" .
+   [11 0 1 1])
+  ("it" .
+   [8 0])
+  ("array" .
+   [1 0 0 0 0])
+  ("describe" .
+   [0 0 0 0 2 3 0 0])
+  ("num" .
+   [2 0 0])
+  ("_foo" .
+   [1 0 0 0])
+  ("logger" .
+   [0 0 0 2 0 0])
+  ("npm" .
+   [1 0 0])
+  ("dburi" .
+   [2 0 1 1 0])
+  ("process" .
+   [0 0 0 0 1 0 0])
+  ("toArray" .
+   [0 0 0 1 0 0 0])
+  ("db" .
+   [2 0])
+  ("bookies" .
+   [3 0 0 0 0 0 0])
+  ("connect" .
+   [0 0 0 0 1 0 0])
+  ("MongoClient" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("counter" .
+   [7 0 0 1 0 0 0])
+  ("new" .
+   [2 0 0])
+  ("runArbHunter" .
+   [0 0 0 0 2 0 0 0 0 0 0 0])
+  ("mapHorseIdsToHorseNames" .
+   [0 0 1 4 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("results2" .
+   [1 0 0 0 0 0 0 0])
+  ("place" .
+   [2 0 0 0 0])
+  ("win" .
+   [2 0 0])
+  ("type" .
+   [3 0 0 0])
+  ("getHorseNamesAndIdsPlace" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("getHorseNamesAndIdsWin" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("listMarketTypes" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("args" .
+   [0 0 1 0])
+  ("todaysDate" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("allRaceData" .
+   [0 0 0 1 2 0 0 0 0 0 0])
+  ("raceData" .
+   [0 0 0 0 0 1 0 0])
+  ("findHorseRaceId" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("eventId" .
+   [0 0 0 1 1 1 0])
+  ("marketIds" .
+   [1 0 0 0 0 0 1 0 0])
+  ("requestFilters2" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("horseData" .
+   [0 0 0 0 1 0 1 0 0])
+  ("matchingHorseFromResults" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("filter" .
+   [1 0 0 0 0 0])
+  ("market" .
+   [0 0 0 1 0 0])
+  ("selectionId" .
+   [0 0 0 3 0 0 0 0 0 0 0])
+  ("marketId2" .
+   [4 0 0 0 0 0 0 0 0])
+  ("requestFilters" .
+   [0 0 1 2 0 0 0 0 0 0 0 0 0 0])
+  ("getHorseData" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("allracesAsString" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("uniq" .
+   [1 0 0 0])
+  ("numRaces" .
+   [0 0 0 0 1 0 0 0])
+  ("flatten" .
+   [2 0 0 0 1 0 0])
+  ("allraces" .
+   [2 0 1 2 0 0 0 0])
+  ("races" .
+   [3 0 0 0 0])
+  ("getHorseNamesAndIds" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("updateHeaders" .
+   [0 0 2 0 0 1 0 0 0 0 0 0 0])
+  ("marketId" .
+   [0 0 0 1 0 1 4 1])
+  ("race" .
+   [7 0 0 0])
+  ("runners" .
+   [2 0 0 0 0 0 0])
+  ("response" .
+   [0 0 0 7 3 1 1 0])
+  ("contains" .
+   [1 0 0 0 0 0 0 0])
+  ("h" .
+   [1])
+  ("n" .
+   [1])
+  ("results" .
+   [11 0 1 3 3 0 0])
+  ("trades" .
+   [1 0 0 0 0 0])
+  ("collection" .
+   [0 0 0 0 3 0 0 0 0 0])
+  ("pathname" .
+   [0 0 0 0 1 0 0 0])
+  ("OddsCUrl" .
+   [0 0 0 1 1 0 0 0])
+  ("winner" .
+   [1 0 0 0 0 0])
+  ("split" .
+   [1 0 0 0 0])
+  ("parse" .
+   [1 0 1 0 0])
+  ("url" .
+   [3 0 0])
+  ("oddsKimono" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("helperfns" .
+   [0 0 0 4 3 0 0 0 0])
+  ("bookieData" .
+   [1 0 0 0 0 1 0 1 0 0])
+  ("horse" .
+   [15 0 0 0 2])
+  ("s" .
+   [2])
+  ("cheerio" .
+   [2 0 0 1 1 0 0])
+  ("oddsRestler" .
+   [0 0 0 0 0 2 0 0 0 0 0])
+  ("raceTime" .
+   [0 0 0 0 0 1 0 0])
+  ("raceName" .
+   [0 0 0 0 0 1 0 0])
+  ("callback" .
+   [0 0 0 0 1 0 0 0])
+  ("oddsCheckerURL" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("kimono" .
+   [1 0 0 0 0 0])
+  ("restler" .
+   [2 0 0 0 0 0 0])
+  ("null" .
+   [12 0 0 0])
+  ("resposne" .
+   [0 0 0 3 1 0 0 0])
+  ("inspect" .
+   [0 0 4 1 2 2 0])
+  ("move-text" .
+   [0 0 0 0 1 0 0 0 0])
+  ("fraction" .
+   [1 0 0 0 0 0 0 0])
+  ("for" .
+   [1 0 0])
+  ("ewFractional" .
+   [0 0 0 1 1 0 0 0 0 0 0 0])
+  ("eval" .
+   [2 0 0 0])
+  ("obj" .
+   [1 0 0])
+  ("decimalOdds" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("fractionalOdds" .
+   [1 0 2 1 1 0 0 0 0 0 0 0 0 0])
+  ("fieldsToExclude" .
+   [0 0 0 1 0 0 1 0 0 0 0 0 0 0 0])
+  ("resultObjects" .
+   [0 0 1 1 1 0 0 0 0 0 0 0 0])
+  ("odds" .
+   [8 0 0 0])
+  ("true" .
+   [4 0 0 0])
+  ("shift" .
+   [0 0 1 0 0])
+  ("shiftColIndex" .
+   [0 0 1 3 0 3 1 1 0 0 1 0 0])
+  ("map" .
+   [14 0 0])
+  ("colIndex" .
+   [0 0 0 2 4 1 0 0])
+  ("cheerioSelectorForBookie" .
+   [0 0 0 1 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("bookieName" .
+   [0 0 0 2 1 2 2 7 0 0])
+  ("string" .
+   [3 0 0 0 0 0])
+  ("getSelectorForBookie" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("bookieColIndices" .
+   [0 0 0 0 1 0 0 4 0 0 0 0 0 0 0 0])
+  ("startingCol6" .
+   [2 0 1 2 2 0 0 0 1 1 0 0])
+  ("paddy" .
+   [1 0 0 0 0])
+  ("victor" .
+   [0 0 0 0 0 1])
+  ("startingPoint" .
+   [0 0 0 0 0 1 1 0 0 0 0 0 0])
+  ("getEwData" .
+   [0 0 0 0 1 0 0 0 0])
+  ("returnsumevans" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("square'''" .
+   [0 0 0 0 1 0 0 0 0])
+  ("sqrt" .
+   [0 0 1 0])
+  ("--" .
+   [1 0])
+  ("product" .
+   [0 0 0 2 0 0 0])
+  ("sumsq" .
+   [2 0 0 0 0])
+  ("->" .
+   [3 0])
+  ("::" .
+   [4 0])
+  ("name" .
+   [1 0 0 0])
+  ("name?" .
+   [0 0 0 0 1])
+  ("getLine" .
+   [0 0 0 1 1 0 0])
+  ("main" .
+   [2 0 0 0])
+  ("putStrLn" .
+   [0 0 1 6 0 0 0 0])
+  ("import" .
+   [0 0 0 0 1 0])
+  ("require" .
+   [1 0 3 4 3 1 0])
+  ("haskell-mode" .
+   [0 0 0 0 0 0 0 0 0 0 1 0])
+  ("var" .
+   [102 0 0])
+  ("util" .
+   [15 0 0 0])
+  ("console" .
+   [4 0 8 136 5 3 0])
+  ("log" .
+   [131 0 0])
+  ("foo" .
+   [18 0 0])
+  ("bar" .
+   [6 0 0])
+  ("keys" .
+   [17 0 0 0])
+  ("function" .
+   [43 0 2 4 3 2 0 1])
+  ("key" .
+   [20 0 0])
+  ("horses" .
+   [11 0 0 1 0 0])
+  ("getHorseNames" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0])
+  ("else" .
+   [7 0 0 0])
+  ("return" .
+   [35 0 1 0 5 1])
+  ("horsedata" .
+   [2 0 2 1 0 0 1 1 0])
+  ("bookieData1" .
+   [1 0 1 5 3 0 1 3 0 0 0])
+  ("bookieData2" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("attribs" .
+   [1 0 0 0 0 0 0])
+  ("false" .
+   [12 0 0 1 0])
+  ("data" .
+   [10 0 1 0])
+  ("Object" .
+   [1 0 7 3 2 1])
+  ("elem" .
+   [7 0 1 0])
+  ("donotwant" .
+   [0 0 0 0 1 0 0 0 0])
+  ("bet365" .
+   [3 0 0 2 0 0])
+  ("boyle" .
+   [3 0 0 0 0])
+  ("betfred" .
+   [2 0 0 0 0 0 0])
+  ("bet365_odds" .
+   [0 0 1 0 0 0 1 1 0 0 0])
+  ("boyle_odds" .
+   [0 0 1 1 0 0 0 0 0 0])
+  ("without" .
+   [1 0 0 0 0 0 0])
+  ("undefined" .
+   [1 0 0 0 0 0 1 0 1])
+  ("betfred_odds" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("sporting_odds" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0])
+  ("victor_odds" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("paddy_odds" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("eight88" .
+   [0 0 1 1 0 0 0])
+  ("eight88_odds" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("ladbrokes" .
+   [0 0 0 2 0 0 0 0 0])
+  ("ladbrokes_odds" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("coral" .
+   [1 0 0 1 0])
+  ("coral_odds" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("willhill" .
+   [0 0 0 2 0 0 0 0])
+  ("willhill_odds" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("rest" .
+   [3 0 0 0])
+  ("ewdata" .
+   [0 0 11 6 0 0])
+  ("children" .
+   [1 0 0 2 2 1 1 1])
+  ("length" .
+   [5 0 0 3 0 1])
+  ("getOdds" .
+   [1 0 0 0 1 0 0])
+  ("child" .
+   [0 0 0 2 0])
+  ("res" .
+   [7 0 0])
+  ("ewdata2" .
+   [4 0 0 0 0 0 0])
+  ("zip" .
+   [1 0 0])
+  ("findEwData" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("val" .
+   [11 0 0])
+  ("toString" .
+   [0 0 1 3 0 0 0 0])
+  ("bookie" .
+   [10 0 0 0 0 0])
+  ("ewOddsByBookie" .
+   [0 0 3 12 0 0 0 0 0 0 0 0 0 0])
+  ("get" .
+   [6 0 0])
+  ("horsenames" .
+   [0 0 0 0 0 2 2 0 0 0])
+  ("err" .
+   [4 0 0])
+  ("halve" .
+   [1 0 0 0 0])
+  ("package" .
+   [1 0 0 0 0 0 0])
+  ("MELPA" .
+   [1 0 0 0 0])
+  ("oddsData" .
+   [0 0 0 5 4 0 0 0])
+  ("combinedResults" .
+   [0 0 0 2 1 0 1 0 2 1 0 0 0 0 0])
+  ("storage" .
+   [2 0 1 2 1 0 1])
+  ("createStorageObject" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("combine" .
+   [0 0 0 0 0 1 0])
+  ("ewColIndicies" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("union" .
+   [2 0 0 0 0])
+  ("username" .
+   [0 0 0 0 1 0 0 0])
+  ("password" .
+   [0 0 0 0 1 0 0 0])
+  ("options" .
+   [5 0 0 0 0 0 0])
+  ("headers" .
+   [1 0 0 0 0 0 0])
+  ("myArgs" .
+   [0 0 0 1 0 0])
+  ("query" .
+   [1 0 0 1 0])
+  ("routes_helperfns" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("req" .
+   [3 0 0])
+  ("getQuery" .
+   [0 0 0 1 0 0 0 0])
+  ("module" .
+   [1 0 0 1 0 0])
+  ("exports" .
+   [1 0 0 0 1 0 0])
+  ("Date" .
+   [1 0 0 0])
+  ("time" .
+   [1 0 0 0])
+  ("helpers" .
+   [2 0 0 0 0 0 0])
+  ("arbTrades" .
+   [0 0 0 0 1 0 0 0 0])
+  ("load-theme" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("hello" .
+   [1 0 0 0 0])
+  ("app" .
+   [1 0 0])
+  ("routes" .
+   [1 0 0 0 0 0])
+  ("clearRaces" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("bookieWinOdds" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("global-set-key" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("back-to-indentation" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])))

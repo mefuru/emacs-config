@@ -3,5 +3,5 @@
 #key: mp
 # --
 $1.map(function($2) {
-  $0
+  $3
 });
