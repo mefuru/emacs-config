@@ -1,674 +1,840 @@
-((("read-kbd-macro" .
-   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("insert" .
-   [1 0 0 0 0 0])
-  ("interactive" .
-   [0 0 0 0 0 0 0 1 0 0 0])
-  ("defun" .
-   [1 0 0 0 0])
-  ("range" .
-   [2 0 0 0 0])
-  ("newString" .
-   [1 0 0 0 0 0 0 0 0])
-  ("slice" .
-   [1 0 0 0 0])
-  ("removeLeadingWhitespace" .
-   [0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("str" .
-   [4 0 0])
-  ("myMap" .
-   [1 0 0 0 0])
-  ("arr" .
-   [7 0 0])
-  ("request" .
+((("newline" .
    [1 0 0 0 0 0 0])
-  ("error" .
-   [1 0 0 0 0])
-  ("TOTAL" .
-   [2 0 0 0 0])
-  ("PLACE" .
-   [2 0 0 0 0])
-  ("LIABILITY" .
-   [1 0 0 0 0 0 0 0 0])
-  ("WIN" .
-   [2 0 0])
-  ("liabilityPageTotal" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("liabilityTotal" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("liability" .
-   [0 0 1 0 0 1 0 0 0])
-  ("stake" .
-   [1 0 0 0 0])
-  ("parseFloat" .
-   [0 0 0 0 2 0 0 0 0 0])
-  ("tradesTable" .
-   [1 0 0 0 0 0 0 0 0 0 0])
-  ("https" .
-   [1 0 0 0 0])
-  ("src" .
-   [3 0 0])
-  ("javascript" .
-   [0 0 0 0 1 0 0 0 0 0])
-  ("text" .
+  ("Redo" .
    [1 0 0 0])
-  ("script" .
-   [2 0 0 2 0 0])
-  ("th" .
-   [2 0])
-  ("newTrade" .
-   [0 0 0 1 1 0 0 0])
-  ("container" .
-   [0 0 0 0 0 1 0 1 0])
-  ("class" .
-   [2 0 0 1 0])
-  ("trim" .
+  ("Undo" .
    [1 0 0 0])
-  ("value" .
-   [1 0 0 0 0])
-  ("getDOMNode" .
-   [0 0 0 0 1 0 0 0 0 0])
-  ("refs" .
-   [2 0 0 0])
-  ("isCollected" .
-   [1 0 1 3 1 1 0 0 0 0 0])
-  ("br" .
-   [2 0])
-  ("Collection" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("ref" .
-   [2 0 0])
-  ("input" .
-   [1 0 0 0 0])
-  ("hooty" .
-   [2 0 0 0 0])
-  ("name2" .
-   [1 0 0 0 0])
-  ("p" .
-   [1])
-  ("props" .
-   [27 0 1 0 1])
-  ("this" .
-   [32 0 0 0])
-  ("Bar" .
-   [1 0 0])
-  ("className" .
-   [0 0 0 0 0 0 1 1 0])
-  ("render" .
-   [1 0 0 1 0 0])
-  ("createClass" .
-   [0 0 0 2 0 0 0 0 0 0 0])
-  ("React" .
-   [1 0 0 1 0])
-  ("div" .
-   [4 0 0])
-  ("Foo" .
-   [1 0 0])
-  ("is" .
-   [1 0])
-  ("back-to-indentation" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
-  ("global-set-key" .
-   [0 0 0 1 0 0 1 0 0 0 0 0 0 0])
-  ("bookieWinOdds" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("clearRaces" .
-   [0 0 0 0 0 0 1 0 0 0])
-  ("routes" .
-   [1 0 0 0 0 0])
-  ("app" .
-   [1 0 0])
-  ("hello" .
-   [1 0 0 0 0])
-  ("load-theme" .
-   [2 0 0 0 0 0 0 0 0 0])
-  ("arbTrades" .
-   [0 0 0 0 1 0 0 0 0])
-  ("helpers" .
-   [2 0 0 0 0 0 0])
-  ("time" .
-   [2 0 0 0])
-  ("Date" .
-   [1 0 0 0])
-  ("exports" .
-   [1 0 0 0 1 0 0])
-  ("module" .
-   [1 0 0 1 0 0])
-  ("getQuery" .
-   [0 0 0 1 0 0 0 0])
-  ("req" .
-   [7 0 0])
-  ("routes_helperfns" .
-   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("query" .
-   [5 0 1 1 1])
-  ("myArgs" .
-   [0 0 0 1 0 0])
-  ("headers" .
-   [1 0 0 0 0 0 0])
-  ("options" .
-   [6 0 0 0 0 0 0])
-  ("password" .
-   [0 0 0 0 1 0 0 0])
-  ("username" .
-   [0 0 0 0 1 0 0 0])
-  ("union" .
-   [2 0 0 0 0])
-  ("ewColIndicies" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0])
-  ("combine" .
-   [0 0 0 0 0 1 0])
-  ("createStorageObject" .
-   [0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("storage" .
-   [2 0 1 2 1 0 1])
-  ("combinedResults" .
-   [0 0 0 2 1 0 1 0 2 1 0 0 0 0 0])
-  ("oddsData" .
-   [0 0 0 5 4 0 0 0])
-  ("MELPA" .
-   [1 0 0 0 0])
-  ("package" .
-   [1 0 0 0 0 0 0])
-  ("halve" .
-   [1 0 0 0 0])
-  ("err" .
-   [13 0 0])
-  ("horsenames" .
-   [0 0 0 0 0 2 2 0 0 0])
-  ("get" .
-   [6 0 0])
-  ("ewOddsByBookie" .
-   [0 0 3 12 0 0 0 0 0 0 0 0 0 0])
-  ("bookie" .
-   [10 0 0 0 0 0])
-  ("toString" .
-   [0 0 1 3 0 0 0 0])
-  ("val" .
-   [11 0 0])
-  ("findEwData" .
-   [0 0 0 1 0 0 0 0 0 0])
-  ("zip" .
-   [1 0 0])
-  ("ewdata2" .
-   [4 0 0 0 0 0 0])
-  ("res" .
-   [14 0 0])
-  ("child" .
-   [0 0 0 2 0])
-  ("getOdds" .
-   [1 0 0 0 1 0 0])
-  ("length" .
-   [6 0 0 3 0 1])
-  ("children" .
-   [1 0 0 2 2 1 1 1])
-  ("ewdata" .
-   [0 0 11 6 0 0])
-  ("rest" .
-   [3 0 0 0])
-  ("willhill_odds" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("willhill" .
-   [0 0 0 2 0 0 0 0])
-  ("coral_odds" .
-   [0 0 0 0 0 0 1 0 0 0])
-  ("coral" .
-   [1 0 0 1 0])
-  ("ladbrokes_odds" .
-   [0 0 0 0 0 0 0 0 0 0 1 0 0 0])
-  ("ladbrokes" .
-   [0 0 0 2 0 0 0 0 0])
-  ("eight88_odds" .
-   [0 0 0 0 0 0 0 0 1 0 0 0])
-  ("eight88" .
-   [0 0 1 1 0 0 0])
-  ("paddy_odds" .
-   [0 0 0 0 1 0 0 0 0 0])
-  ("victor_odds" .
-   [0 0 0 1 0 0 0 0 0 0 0])
-  ("sporting_odds" .
-   [0 0 0 1 1 0 0 0 0 0 0 0 0])
-  ("betfred_odds" .
-   [0 0 0 0 1 0 0 0 0 0 0 0])
-  ("undefined" .
-   [1 0 0 0 0 0 1 0 1])
-  ("without" .
-   [1 0 0 0 0 0 0])
-  ("boyle_odds" .
-   [0 0 1 1 0 0 0 0 0 0])
-  ("bet365_odds" .
-   [0 0 1 0 0 0 1 1 0 0 0])
-  ("betfred" .
-   [2 0 0 0 0 0 0])
-  ("boyle" .
-   [3 0 0 0 0])
-  ("bet365" .
-   [3 0 0 2 0 0])
-  ("donotwant" .
-   [0 0 0 0 1 0 0 0 0])
-  ("elem" .
-   [10 0 1 0])
-  ("Object" .
-   [1 0 7 3 2 1])
-  ("data" .
-   [19 0 1 0])
-  ("false" .
-   [12 0 0 1 0])
-  ("attribs" .
-   [1 0 0 0 0 0 0])
-  ("bookieData2" .
-   [3 0 0 0 0 0 0 0 0 0 0])
-  ("bookieData1" .
-   [1 0 1 5 3 0 1 3 0 0 0])
-  ("horsedata" .
-   [2 0 2 1 0 0 1 1 0])
-  ("return" .
-   [44 0 1 1 5 1])
-  ("else" .
-   [7 0 0 0])
-  ("getHorseNames" .
-   [0 0 0 0 2 0 0 0 0 0 0 0 0])
-  ("horses" .
-   [52 0 0 1 1 0])
-  ("key" .
-   [20 0 0])
-  ("function" .
-   [50 0 6 16 3 2 0 1])
-  ("keys" .
-   [17 0 0 0])
-  ("bar" .
-   [6 0 0])
-  ("foo" .
-   [23 0 0])
-  ("log" .
-   [176 0 0])
-  ("console" .
-   [12 0 9 178 6 5 0])
-  ("util" .
-   [16 0 0 0])
-  ("var" .
-   [123 0 0])
-  ("haskell-mode" .
-   [0 0 0 0 0 0 0 0 0 0 1 0])
-  ("require" .
-   [2 0 3 5 3 1 0])
-  ("import" .
-   [0 0 0 0 1 0])
-  ("putStrLn" .
-   [0 0 1 6 0 0 0 0])
-  ("main" .
-   [2 0 0 0])
-  ("getLine" .
-   [0 0 0 1 1 0 0])
-  ("name?" .
-   [0 0 0 0 1])
-  ("name" .
-   [4 0 0 0])
-  ("::" .
-   [4 0])
-  ("->" .
-   [3 0])
-  ("sumsq" .
-   [2 0 0 0 0])
-  ("product" .
-   [0 0 0 2 0 0 0])
-  ("--" .
-   [1 0])
-  ("sqrt" .
-   [0 0 1 0])
-  ("square'''" .
-   [0 0 0 0 1 0 0 0 0])
-  ("returnsumevans" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("getEwData" .
-   [0 0 0 0 1 0 0 0 0])
-  ("startingPoint" .
-   [0 0 0 0 0 1 1 0 0 0 0 0 0])
-  ("victor" .
-   [0 0 0 0 0 1])
-  ("paddy" .
-   [1 0 0 0 0])
-  ("startingCol6" .
-   [2 0 1 2 2 0 0 0 1 1 0 0])
-  ("bookieColIndices" .
-   [0 0 0 0 1 0 0 4 0 0 0 0 0 0 0 0])
-  ("getSelectorForBookie" .
-   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("string" .
-   [3 0 0 0 0 0])
-  ("bookieName" .
-   [0 0 0 2 1 2 2 7 0 0])
-  ("cheerioSelectorForBookie" .
-   [0 0 0 1 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("colIndex" .
-   [0 0 0 2 4 1 0 0])
-  ("map" .
-   [20 0 0])
-  ("shiftColIndex" .
-   [0 0 1 3 0 3 1 1 0 0 1 0 0])
-  ("shift" .
-   [0 0 1 0 0])
-  ("true" .
-   [4 0 0 0])
-  ("odds" .
-   [11 0 0 0])
-  ("resultObjects" .
-   [0 0 1 1 1 0 0 0 0 0 0 0 0])
-  ("fieldsToExclude" .
-   [0 0 0 1 0 0 1 0 0 0 0 0 0 0 0])
-  ("fractionalOdds" .
-   [1 0 2 1 1 0 0 0 0 0 0 0 0 0])
-  ("decimalOdds" .
-   [0 0 0 0 1 0 0 0 0 0 0])
-  ("obj" .
-   [1 0 0])
-  ("eval" .
-   [2 0 0 0])
-  ("ewFractional" .
-   [0 0 0 1 1 0 0 0 0 0 0 0])
-  ("for" .
-   [1 0 0])
-  ("fraction" .
-   [1 0 0 0 0 0 0 0])
-  ("move-text" .
-   [0 0 0 0 1 0 0 0 0])
-  ("inspect" .
-   [0 0 4 1 2 2 0])
-  ("resposne" .
-   [0 0 0 3 1 0 0 0])
-  ("null" .
-   [13 0 0 0])
-  ("restler" .
-   [2 0 0 0 0 0 0])
-  ("kimono" .
-   [1 0 0 0 0 0])
-  ("oddsCheckerURL" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0])
-  ("callback" .
-   [0 0 0 1 4 1 0 0])
-  ("raceName" .
-   [0 0 0 0 0 1 0 0])
-  ("raceTime" .
-   [0 0 0 0 0 1 0 0])
-  ("oddsRestler" .
-   [0 0 0 0 0 2 0 0 0 0 0])
-  ("cheerio" .
-   [2 0 0 1 1 0 0])
-  ("s" .
-   [2])
-  ("horse" .
-   [17 0 1 6 2])
-  ("bookieData" .
-   [1 0 0 0 0 1 0 1 0 0])
-  ("helperfns" .
-   [0 0 0 4 3 0 0 0 0])
-  ("oddsKimono" .
-   [0 0 0 0 0 1 0 0 0 0])
-  ("url" .
-   [4 0 0])
-  ("parse" .
-   [1 0 1 0 0])
-  ("split" .
-   [1 0 0 0 0])
-  ("winner" .
-   [2 0 0 0 0 0])
-  ("OddsCUrl" .
-   [0 0 0 1 1 0 0 0])
-  ("pathname" .
-   [0 0 0 0 1 0 0 0])
-  ("collection" .
-   [0 0 0 1 4 1 1 0 0 0])
-  ("trades" .
-   [11 0 0 0 0 0])
-  ("results" .
-   [13 0 1 4 4 0 0])
-  ("n" .
-   [1])
-  ("h" .
-   [1])
-  ("contains" .
-   [1 0 0 0 0 0 0 0])
-  ("response" .
-   [2 0 0 10 4 1 1 0])
-  ("runners" .
-   [2 0 0 0 0 0 0])
-  ("race" .
-   [15 0 0 0])
-  ("marketId" .
-   [0 0 0 1 0 1 4 1])
-  ("updateHeaders" .
-   [0 0 2 0 0 1 0 0 0 0 0 0 0])
-  ("getHorseNamesAndIds" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("races" .
-   [9 0 0 0 0])
-  ("allraces" .
-   [2 0 1 2 0 0 0 0])
-  ("flatten" .
+  ("newUndo" .
    [2 0 0 0 1 0 0])
-  ("numRaces" .
-   [0 0 0 0 1 0 0 0])
-  ("uniq" .
-   [1 0 0 0])
-  ("allracesAsString" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("getHorseData" .
-   [0 0 0 1 0 0 0 0 0 0 0 0])
-  ("requestFilters" .
-   [0 0 1 2 0 0 0 0 0 0 0 0 0 0])
-  ("marketId2" .
-   [4 0 0 0 0 0 0 0 0])
-  ("selectionId" .
-   [0 0 0 3 0 0 0 0 0 0 0])
-  ("market" .
-   [0 0 0 1 0 0])
-  ("filter" .
-   [1 0 0 0 0 0])
-  ("matchingHorseFromResults" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("horseData" .
-   [0 0 0 0 1 0 1 0 0])
-  ("requestFilters2" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("marketIds" .
-   [1 0 0 0 0 0 1 0 0])
-  ("eventId" .
-   [0 0 0 1 1 1 0])
-  ("findHorseRaceId" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("raceData" .
-   [0 0 0 0 0 1 0 0])
-  ("allRaceData" .
-   [0 0 0 1 2 0 0 0 0 0 0])
-  ("todaysDate" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("args" .
-   [0 0 1 0])
-  ("listMarketTypes" .
-   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("getHorseNamesAndIdsWin" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("getHorseNamesAndIdsPlace" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("type" .
-   [10 0 0 0])
-  ("win" .
-   [2 0 0])
-  ("place" .
-   [2 0 0 0 0])
-  ("results2" .
-   [1 0 0 0 0 0 0 0])
-  ("mapHorseIdsToHorseNames" .
-   [0 0 1 4 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("runArbHunter" .
-   [0 0 0 0 2 0 0 0 0 0 0 0])
-  ("new" .
-   [2 0 0])
-  ("counter" .
-   [7 0 0 1 0 0 0])
-  ("MongoClient" .
-   [0 0 0 3 0 0 0 0 0 0 0])
-  ("connect" .
-   [0 0 0 0 2 0 0])
-  ("bookies" .
-   [4 0 0 0 0 0 0])
-  ("db" .
-   [6 0])
-  ("toArray" .
-   [0 0 0 3 0 0 0])
-  ("process" .
+  ("newRedo" .
    [0 0 0 0 1 0 0])
-  ("dburi" .
-   [2 0 2 2 0])
-  ("npm" .
-   [1 0 0])
-  ("logger" .
-   [0 0 0 2 0 0])
-  ("_foo" .
-   [1 0 0 0])
-  ("num" .
-   [2 0 0])
-  ("describe" .
-   [0 0 0 0 2 3 0 0])
-  ("array" .
+  ("redo" .
+   [5 0 0 0])
+  ("undo" .
+   [10 1 0 0])
+  ("newListOfInputs" .
+   [0 0 0 2 3 0 0 0 0 0 0 0 0 0 0])
+  ("listOfInputs" .
+   [0 0 0 0 6 2 0 0 0 0 0 0])
+  ("author" .
+   [3 0 0 0 0 0])
+  ("content" .
+   [1 0 0 0 0 0 0])
+  ("Hello" .
    [1 0 0 0 0])
-  ("it" .
-   [8 0])
-  ("done" .
-   [11 0 1 1])
-  ("getBookiesArray" .
-   [0 0 0 0 3 0 0 0 0 0 0 0 0 0 0])
-  ("should" .
-   [3 0 0 3 2 0])
-  ("equal" .
-   [0 0 1 0 0])
-  ("all" .
-   [2 0 0])
-  ("allBookies" .
-   [0 0 0 0 4 0 0 0 0 0])
-  ("passedBookie" .
-   [0 0 0 1 1 1 0 3 1 0 0 0])
-  ("eql" .
-   [6 0 0])
-  ("returnedBookie" .
-   [0 0 0 0 0 0 0 0 2 0 0 0 0 0])
-  ("expectedResult" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("fn" .
-   [3 0])
-  ("passedBookies" .
-   [2 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("if" .
-   [8 0])
-  ("backodds" .
-   [0 0 0 0 3 0 0 0])
-  ("Error" .
-   [0 0 0 1 0])
-  ("nextBackTick" .
-   [0 0 0 1 0 0 0 0 0 0 0 0])
-  ("message" .
-   [1 0 0 0 1 1 0])
-  ("typeof" .
-   [2 0 0 0 0 0])
-  ("i" .
-   [1])
-  ("load" .
+  ("async" .
+   [1 0 0 0 0])
+  ("urls" .
+   [2 0 0 0])
+  ("fractional" .
+   [0 0 0 0 0 0 0 0 0 1])
+  ("join" .
    [1 0 0 0])
-  ("formatPercentString" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("updateBookies" .
-   [0 0 0 0 0 0 0 2 0 0 0 0 0])
-  ("updatebookies" .
-   [1 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("numberOfWinners" .
-   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
-  ("bfw" .
-   [1 0 0])
-  ("bfp" .
-   [3 0 0])
-  ("numPlaces" .
-   [0 0 0 0 2 0 0 0 0])
-  ("invalidEwTrade" .
-   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
-  ("percentArb" .
+  ("concat" .
+   [3 0 0 0 0 0])
+  ("newName" .
+   [0 0 0 0 2 0 0])
+  ("firstElem" .
+   [0 0 0 0 0 0 3 0 0])
+  ("push" .
+   [1 0 0 0])
+  ("convertNameFormat" .
+   [0 0 0 0 1 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("splitArr" .
+   [1 0 0 1 1 1 3 0])
+  ("golfer" .
+   [6 0 0 0 0 0])
+  ("golf" .
+   [1 0 0 0])
+  ("toLowerCase" .
+   [0 0 0 2 0 0 0 0 0 0 0])
+  ("golfersArray" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("userAgents" .
    [0 0 0 0 0 1 0 0 0 0])
-  ("find" .
-   [1 0 0 0])
-  ("json" .
-   [1 0 0 0])
-  ("throw" .
-   [1 0 0 0 0])
-  ("td" .
-   [5 0])
-  ("location" .
-   [0 0 0 1 0 0 0 0])
-  ("comments" .
-   [1 0 0 0 0 0 0 0])
-  ("tr" .
-   [3 0])
-  ("_id" .
-   [6 0 0])
-  ("trade" .
-   [8 0 0 1 1])
-  ("handleTradeSubmit" .
-   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
-  ("handleTradeDelete" .
-   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0])
-  ("template" .
-   [2 0 0 0 0 1 1 0])
-  ("option" .
-   [0 0 0 1 0 0])
-  ("optionNodes" .
-   [0 0 0 0 0 0 0 0 1 0 0])
-  ("ResultsTable" .
-   [0 0 1 0 0 0 0 0 0 0 0 0])
-  ("place1" .
-   [1 0 0 0 0 0])
-  ("place2" .
-   [1 0 0 0 0 0])
-  ("place3" .
-   [1 0 0 0 0 0])
-  ("place4" .
-   [1 0 0 0 0 0])
-  ("place5" .
-   [1 0 0 0 0 0])
-  ("id" .
+  ("listing" .
+   [1 0 0 0 0 0 0])
+  ("onChange" .
+   [0 0 0 0 0 1 0 0])
+  ("race_selection" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("transaction" .
+   [0 0 0 0 0 1 1 0 0 0 0])
+  ("on" .
    [1 0])
-  ("handleSubmit" .
-   [0 0 0 1 0 0 0 0 0 0 0 0])
-  ("tradeNodes" .
+  ("socket" .
+   [0 0 0 0 1 0])
+  ("transactionsToHandle" .
+   [0 0 0 0 0 4 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("c" .
+   [1])
+  ("cashTransactions" .
+   [0 0 1 2 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("Transaction" .
+   [0 0 0 0 0 3 3 0 0 0 0])
+  ("onSubmit" .
+   [0 0 1 0 0 0 0 0])
+  ("newCashTransaction" .
+   [0 0 0 0 1 1 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("ledgerFiles" .
+   [0 0 1 0 0 0 0 0 0 0 0])
+  ("first" .
+   [1 0 0 0 0])
+  ("placed" .
+   [1 0 0 0 0 0])
+  ("with" .
+   [0 0 1 1])
+  ("winners" .
+   [1 0 0 0 2 0 0])
+  ("raceResults" .
+   [0 0 0 0 0 5 0 0 0 0 0])
+  ("nonRunnersForDay" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("res2" .
+   [1 0 0 0])
+  ("summaryByDayNonrunners" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2 0 0 0 0 0 0])
+  ("nonRunners" .
+   [0 0 0 0 1 1 1 0 0 0])
+  ("totalOutstandingCollections" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("totalCollections" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0 1 0])
+  ("totalLiability" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("totalStake" .
    [0 0 0 0 0 0 1 0 0 0])
-  ("state" .
-   [6 0 0 1 0])
-  ("componentWillMount" .
-   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("setState" .
-   [0 0 0 1 0 0 0 0])
-  ("handle" .
-   [0 0 0 0 0 1])
-  ("bind" .
+  ("summaryByDayResults" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("target" .
+   [0 0 0 1 0 0])
+  ("Day" .
+   [1 0 0])
+  ("By" .
+   [1 0])
+  ("Summary" .
+   [1 0 0 0 1 0 0])
+  ("ALL" .
+   [1 0 0])
+  ("runner" .
+   [3 0 0 0 0 0])
+  ("d" .
+   [1])
+  ("meeting" .
+   [1 0 0 0 0 0 0])
+  ("Time" .
+   [1 0 0 0])
+  ("Meeting" .
+   [1 0 0 0 0 0 0])
+  ("jsx" .
+   [3 0 0])
+  ("status" .
+   [1 0 0 0 0 0])
+  ("js-insert-function" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("js" .
+   [2 0])
+  ("sum" .
+   [1 0 0])
+  ("la" .
+   [4 0])
+  ("parseInt" .
+   [1 0 0 0 0 0 0 0])
+  ("result" .
+   [4 0 0 0 0 0])
+  ("race_number" .
+   [0 0 0 0 0 2 0 0 0 0 0])
+  ("removerace" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("horseDataForRace" .
+   [0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0])
+  ("venue" .
+   [2 0 0 0 0])
+  ("http" .
    [1 0 0 0])
   ("loadTradesFromServer" .
    [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
-  ("http" .
+  ("bind" .
    [1 0 0 0])
-  ("venue" .
-   [2 0 0 0 0])
-  ("horseDataForRace" .
-   [0 0 0 0 0 0 4 0 0 0 0 0 0 0 0 0])
-  ("removerace" .
-   [1 0 0 0 0 0 0 0 0 0])
-  ("race_number" .
-   [0 0 0 0 0 2 0 0 0 0 0])
-  ("result" .
-   [4 0 0 0 0 0])
-  ("parseInt" .
+  ("handle" .
+   [0 0 0 0 0 1])
+  ("setState" .
+   [0 0 0 2 0 0 0 0])
+  ("componentWillMount" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("state" .
+   [16 0 0 1 0])
+  ("tradeNodes" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("handleSubmit" .
+   [0 0 0 2 0 0 1 0 0 0 0 0])
+  ("id" .
+   [1 0])
+  ("place5" .
+   [1 0 0 0 0 0])
+  ("place4" .
+   [1 0 0 0 0 0])
+  ("place3" .
+   [1 0 0 0 0 0])
+  ("place2" .
+   [1 0 0 0 0 0])
+  ("place1" .
+   [1 0 0 0 0 0])
+  ("ResultsTable" .
+   [0 0 1 0 0 0 0 0 0 0 0 0])
+  ("optionNodes" .
+   [0 0 0 0 0 0 0 0 1 0 0])
+  ("option" .
+   [0 0 0 1 0 0])
+  ("template" .
+   [2 0 0 0 0 1 1 0])
+  ("handleTradeDelete" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 1 0 0])
+  ("handleTradeSubmit" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("trade" .
+   [9 0 0 1 1])
+  ("_id" .
+   [6 0 0])
+  ("tr" .
+   [3 0])
+  ("comments" .
    [1 0 0 0 0 0 0 0])
-  ("la" .
-   [4 0])
-  ("sum" .
+  ("location" .
+   [0 0 0 1 0 0 0 0])
+  ("td" .
+   [5 0])
+  ("throw" .
+   [1 0 0 0 0])
+  ("json" .
+   [1 0 0 0])
+  ("find" .
+   [1 0 0 0])
+  ("percentArb" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("invalidEwTrade" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("numPlaces" .
+   [0 0 0 0 2 0 0 0 0])
+  ("bfp" .
+   [3 0 0])
+  ("bfw" .
    [1 0 0])
-  ("js" .
+  ("numberOfWinners" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("updatebookies" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("updateBookies" .
+   [0 0 0 0 0 0 0 2 0 0 0 0 0])
+  ("formatPercentString" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("load" .
+   [1 0 0 0])
+  ("i" .
+   [1])
+  ("typeof" .
+   [2 0 0 0 0 0])
+  ("message" .
+   [1 0 0 0 1 1 0])
+  ("nextBackTick" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("Error" .
+   [0 0 0 1 0])
+  ("backodds" .
+   [0 0 0 0 3 0 0 0])
+  ("if" .
+   [9 0])
+  ("passedBookies" .
+   [2 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("fn" .
+   [3 0])
+  ("expectedResult" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("returnedBookie" .
+   [0 0 0 0 0 0 0 0 2 0 0 0 0 0])
+  ("eql" .
+   [6 0 0])
+  ("passedBookie" .
+   [0 0 0 1 1 1 0 3 1 0 0 0])
+  ("allBookies" .
+   [0 0 0 0 4 0 0 0 0 0])
+  ("all" .
+   [2 0 0])
+  ("equal" .
+   [0 0 1 0 0])
+  ("should" .
+   [3 0 0 3 2 0])
+  ("getBookiesArray" .
+   [0 0 0 0 3 0 0 0 0 0 0 0 0 0 0])
+  ("done" .
+   [11 0 1 1])
+  ("it" .
+   [8 0])
+  ("array" .
+   [2 0 0 0 0])
+  ("describe" .
+   [0 0 0 0 2 3 0 0])
+  ("num" .
+   [2 0 0])
+  ("_foo" .
+   [1 0 0 0])
+  ("logger" .
+   [0 0 0 2 0 0])
+  ("npm" .
+   [1 0 0])
+  ("dburi" .
+   [2 0 2 2 0])
+  ("process" .
+   [0 0 0 0 1 0 0])
+  ("toArray" .
+   [0 0 0 3 0 0 0])
+  ("db" .
+   [6 0])
+  ("bookies" .
+   [4 0 0 0 0 0 0])
+  ("connect" .
+   [0 0 0 0 2 0 0])
+  ("MongoClient" .
+   [0 0 0 3 0 0 0 0 0 0 0])
+  ("counter" .
+   [7 0 0 1 0 0 0])
+  ("new" .
+   [2 0 0])
+  ("runArbHunter" .
+   [0 0 0 0 2 0 0 0 0 0 0 0])
+  ("mapHorseIdsToHorseNames" .
+   [0 0 1 4 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("results2" .
+   [1 0 0 0 0 0 0 0])
+  ("place" .
+   [2 0 0 1 0])
+  ("win" .
+   [2 0 0])
+  ("type" .
+   [12 0 0 0])
+  ("getHorseNamesAndIdsPlace" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("getHorseNamesAndIdsWin" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("listMarketTypes" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("args" .
+   [0 0 1 0])
+  ("todaysDate" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("allRaceData" .
+   [0 0 0 1 2 0 0 0 0 0 0])
+  ("raceData" .
+   [0 0 0 0 0 1 0 0])
+  ("findHorseRaceId" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0])
+  ("eventId" .
+   [0 0 0 1 1 1 0])
+  ("marketIds" .
+   [1 0 0 0 0 0 1 0 0])
+  ("requestFilters2" .
+   [1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("horseData" .
+   [0 0 0 0 1 0 1 0 0])
+  ("matchingHorseFromResults" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("filter" .
+   [1 0 0 0 0 0])
+  ("market" .
+   [0 0 0 1 0 0])
+  ("selectionId" .
+   [0 0 0 3 0 0 0 0 0 0 0])
+  ("marketId2" .
+   [4 0 0 0 0 0 0 0 0])
+  ("requestFilters" .
+   [0 0 1 2 0 0 0 0 0 0 0 0 0 0])
+  ("getHorseData" .
+   [0 0 0 1 0 0 0 0 0 0 0 0])
+  ("allracesAsString" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("uniq" .
+   [1 0 0 0])
+  ("numRaces" .
+   [0 0 0 0 1 0 0 0])
+  ("flatten" .
+   [3 0 0 0 1 0 0])
+  ("allraces" .
+   [2 0 1 2 0 0 0 0])
+  ("races" .
+   [9 0 0 0 0])
+  ("getHorseNamesAndIds" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("updateHeaders" .
+   [0 0 2 0 0 1 0 0 0 0 0 0 0])
+  ("marketId" .
+   [0 0 0 1 0 1 4 1])
+  ("race" .
+   [17 0 0 0])
+  ("runners" .
+   [2 0 0 0 0 0 0])
+  ("response" .
+   [2 0 0 10 4 1 1 0])
+  ("contains" .
+   [2 0 0 0 0 0 0 0])
+  ("h" .
+   [1])
+  ("n" .
+   [1])
+  ("results" .
+   [22 0 1 7 4 1 0])
+  ("trades" .
+   [15 0 0 0 0 0])
+  ("collection" .
+   [0 0 0 1 4 1 1 0 0 0])
+  ("pathname" .
+   [0 0 0 0 1 0 0 0])
+  ("OddsCUrl" .
+   [0 0 0 1 1 0 0 0])
+  ("winner" .
+   [2 0 0 0 0 0])
+  ("split" .
+   [3 0 0 0 0])
+  ("parse" .
+   [1 0 1 0 0])
+  ("url" .
+   [5 0 0])
+  ("oddsKimono" .
+   [0 0 0 0 0 1 0 0 0 0])
+  ("helperfns" .
+   [0 0 0 4 3 0 0 0 0])
+  ("bookieData" .
+   [1 0 0 0 0 1 0 1 0 0])
+  ("horse" .
+   [17 0 1 7 2])
+  ("s" .
+   [2])
+  ("cheerio" .
+   [2 0 0 1 1 0 0])
+  ("oddsRestler" .
+   [0 0 0 0 0 2 0 0 0 0 0])
+  ("raceTime" .
+   [0 0 0 0 0 1 0 0])
+  ("raceName" .
+   [0 0 0 0 0 1 0 0])
+  ("callback" .
+   [0 0 0 1 5 1 0 0])
+  ("oddsCheckerURL" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0])
+  ("kimono" .
+   [1 0 0 0 0 0])
+  ("restler" .
+   [2 0 0 0 0 0 0])
+  ("null" .
+   [14 0 0 0])
+  ("resposne" .
+   [0 0 0 3 1 0 0 0])
+  ("inspect" .
+   [0 0 4 1 3 2 0])
+  ("move-text" .
+   [0 0 0 0 1 0 0 0 0])
+  ("fraction" .
+   [2 0 0 0 0 0 1 0])
+  ("for" .
+   [1 0 0])
+  ("ewFractional" .
+   [0 0 0 1 1 0 0 0 0 0 0 0])
+  ("eval" .
+   [2 0 0 0])
+  ("obj" .
+   [1 0 0])
+  ("decimalOdds" .
+   [0 0 0 0 1 0 0 0 0 0 0])
+  ("fractionalOdds" .
+   [1 0 2 1 1 0 0 0 0 0 0 1 0 0])
+  ("fieldsToExclude" .
+   [0 0 0 1 0 0 1 0 0 0 0 0 0 0 0])
+  ("resultObjects" .
+   [0 0 1 1 1 0 0 0 0 0 0 0 0])
+  ("odds" .
+   [11 0 0 0])
+  ("true" .
+   [4 0 0 0])
+  ("shift" .
+   [1 0 1 0 0])
+  ("shiftColIndex" .
+   [0 0 1 3 0 3 1 1 0 0 1 0 0])
+  ("map" .
+   [24 0 0])
+  ("colIndex" .
+   [0 0 0 2 4 1 0 0])
+  ("cheerioSelectorForBookie" .
+   [0 0 0 1 3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("bookieName" .
+   [0 0 0 2 1 2 2 7 0 0])
+  ("string" .
+   [3 0 0 0 0 0])
+  ("getSelectorForBookie" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("bookieColIndices" .
+   [0 0 0 0 1 0 0 4 0 0 0 0 0 0 0 0])
+  ("startingCol6" .
+   [2 0 1 2 2 0 0 0 1 1 0 0])
+  ("paddy" .
+   [5 0 0 0 0])
+  ("victor" .
+   [0 0 0 0 0 1])
+  ("startingPoint" .
+   [0 0 0 0 0 1 1 0 0 0 0 0 0])
+  ("getEwData" .
+   [0 0 0 0 1 0 0 0 0])
+  ("returnsumevans" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("square'''" .
+   [0 0 0 0 1 0 0 0 0])
+  ("sqrt" .
+   [0 0 1 0])
+  ("--" .
+   [1 0])
+  ("product" .
+   [0 0 0 2 0 0 0])
+  ("sumsq" .
+   [2 0 0 0 0])
+  ("->" .
+   [3 0])
+  ("::" .
+   [4 0])
+  ("name" .
+   [7 0 0 0])
+  ("name?" .
+   [0 0 0 0 1])
+  ("getLine" .
+   [0 0 0 1 1 0 0])
+  ("main" .
+   [2 0 0 0])
+  ("putStrLn" .
+   [0 0 1 6 0 0 0 0])
+  ("import" .
+   [0 0 0 0 1 0])
+  ("require" .
+   [3 0 3 6 3 1 0])
+  ("haskell-mode" .
+   [0 0 0 0 0 0 0 0 0 0 1 0])
+  ("var" .
+   [150 0 0])
+  ("util" .
+   [17 0 0 0])
+  ("console" .
+   [12 0 9 179 6 6 0])
+  ("log" .
+   [178 0 0])
+  ("foo" .
+   [23 0 0])
+  ("bar" .
+   [6 0 0])
+  ("keys" .
+   [17 0 0 0])
+  ("function" .
+   [51 0 6 21 3 2 0 1])
+  ("key" .
+   [21 0 0])
+  ("horses" .
+   [53 0 0 1 1 0])
+  ("getHorseNames" .
+   [0 0 0 0 2 0 0 0 0 0 0 0 0])
+  ("else" .
+   [8 0 0 0])
+  ("return" .
+   [53 0 1 1 6 1])
+  ("horsedata" .
+   [2 0 2 1 0 0 1 1 0])
+  ("bookieData1" .
+   [1 0 1 5 3 0 1 3 0 0 0])
+  ("bookieData2" .
+   [3 0 0 0 0 0 0 0 0 0 0])
+  ("attribs" .
+   [1 0 0 0 0 0 0])
+  ("false" .
+   [13 0 0 1 0])
+  ("data" .
+   [30 0 2 0])
+  ("Object" .
+   [1 0 7 3 2 1])
+  ("elem" .
+   [10 0 1 0])
+  ("donotwant" .
+   [0 0 0 0 1 0 0 0 0])
+  ("bet365" .
+   [3 0 0 2 0 0])
+  ("boyle" .
+   [3 0 0 0 0])
+  ("betfred" .
+   [2 0 0 0 0 0 0])
+  ("bet365_odds" .
+   [0 0 1 0 0 0 1 1 0 0 0])
+  ("boyle_odds" .
+   [0 0 1 1 0 0 0 0 0 0])
+  ("without" .
+   [3 0 0 0 0 0 0])
+  ("undefined" .
+   [2 0 0 0 1 0 1 0 1])
+  ("betfred_odds" .
+   [0 0 0 0 1 0 0 0 0 0 0 0])
+  ("sporting_odds" .
+   [0 0 0 1 1 0 0 0 0 0 0 0 0])
+  ("victor_odds" .
+   [0 0 0 1 0 0 0 0 0 0 0])
+  ("paddy_odds" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("eight88" .
+   [0 0 1 1 0 0 0])
+  ("eight88_odds" .
+   [0 0 0 0 0 0 0 0 1 0 0 0])
+  ("ladbrokes" .
+   [0 0 0 2 0 0 0 0 0])
+  ("ladbrokes_odds" .
+   [0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("coral" .
+   [1 0 0 1 0])
+  ("coral_odds" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("willhill" .
+   [0 0 0 2 0 0 0 0])
+  ("willhill_odds" .
+   [0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("rest" .
+   [3 0 0 0])
+  ("ewdata" .
+   [0 0 11 6 0 0])
+  ("children" .
+   [1 0 0 2 2 1 1 1])
+  ("length" .
+   [6 0 0 3 0 1])
+  ("getOdds" .
+   [1 0 0 0 1 0 0])
+  ("child" .
+   [0 0 0 2 0])
+  ("res" .
+   [15 0 0])
+  ("ewdata2" .
+   [4 0 0 0 0 0 0])
+  ("zip" .
+   [1 0 0])
+  ("findEwData" .
+   [0 0 0 1 0 0 0 0 0 0])
+  ("val" .
+   [13 0 0])
+  ("toString" .
+   [0 0 1 3 0 0 0 0])
+  ("bookie" .
+   [10 0 0 0 0 0])
+  ("ewOddsByBookie" .
+   [0 0 3 12 0 0 0 0 0 0 0 0 0 0])
+  ("get" .
+   [6 0 0])
+  ("horsenames" .
+   [0 0 0 0 0 2 2 0 0 0])
+  ("err" .
+   [13 0 0])
+  ("halve" .
+   [1 0 0 0 0])
+  ("package" .
+   [1 0 0 0 0 0 0])
+  ("MELPA" .
+   [1 0 0 0 0])
+  ("oddsData" .
+   [0 0 0 5 4 0 0 0])
+  ("combinedResults" .
+   [0 0 0 2 1 0 1 0 2 1 0 0 0 0 0])
+  ("storage" .
+   [2 0 1 2 1 0 1])
+  ("createStorageObject" .
+   [0 0 0 2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("combine" .
+   [0 0 0 0 0 1 0])
+  ("ewColIndicies" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("union" .
+   [2 0 0 0 0])
+  ("username" .
+   [2 0 1 1 1 0 0 0])
+  ("password" .
+   [2 0 0 1 4 0 0 0])
+  ("options" .
+   [6 0 0 0 0 0 0])
+  ("headers" .
+   [1 0 0 0 0 0 0])
+  ("myArgs" .
+   [0 0 0 1 0 0])
+  ("query" .
+   [5 0 1 1 1])
+  ("routes_helperfns" .
+   [0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("req" .
+   [7 0 0])
+  ("getQuery" .
+   [0 0 0 1 0 0 0 0])
+  ("module" .
+   [2 0 0 1 0 0])
+  ("exports" .
+   [1 0 0 1 1 0 0])
+  ("Date" .
+   [1 0 0 0])
+  ("time" .
+   [3 0 0 0])
+  ("helpers" .
+   [2 0 0 0 0 0 0])
+  ("arbTrades" .
+   [0 0 0 0 1 0 0 0 0])
+  ("load-theme" .
+   [2 0 0 0 0 0 0 0 0 0])
+  ("hello" .
+   [1 0 0 0 0])
+  ("app" .
+   [1 0 0])
+  ("routes" .
+   [1 0 0 0 0 0])
+  ("clearRaces" .
+   [0 0 0 0 0 0 1 0 0 0])
+  ("bookieWinOdds" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0])
+  ("global-set-key" .
+   [0 0 0 1 0 0 1 0 0 0 0 0 0 0])
+  ("back-to-indentation" .
+   [0 0 0 0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0])
+  ("is" .
+   [1 0])
+  ("Foo" .
+   [2 0 0])
+  ("div" .
+   [6 0 0])
+  ("React" .
+   [1 0 2 1 1])
+  ("createClass" .
+   [0 0 0 3 0 0 0 0 0 0 0])
+  ("render" .
+   [1 0 0 2 1 0])
+  ("className" .
+   [0 0 0 0 0 0 1 1 0])
+  ("Bar" .
+   [1 0 0])
+  ("this" .
+   [45 0 0 0])
+  ("props" .
+   [28 0 1 0 1])
+  ("p" .
+   [1])
+  ("name2" .
+   [1 0 0 0 0])
+  ("hooty" .
+   [2 0 0 0 0])
+  ("input" .
+   [3 0 0 0 0])
+  ("ref" .
+   [3 0 0])
+  ("Collection" .
+   [1 0 0 0 0 0 0 0 0 0])
+  ("br" .
    [2 0])
-  ("js-insert-function" .
-   [0 0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0])))
+  ("isCollected" .
+   [1 0 1 3 1 1 0 0 0 0 0])
+  ("refs" .
+   [3 0 0 0])
+  ("getDOMNode" .
+   [0 0 0 1 1 0 0 0 0 0])
+  ("value" .
+   [2 0 0 1 0])
+  ("trim" .
+   [1 0 0 0])
+  ("class" .
+   [2 0 0 1 0])
+  ("container" .
+   [0 0 0 0 0 1 0 1 0])
+  ("newTrade" .
+   [0 0 0 1 1 0 0 0])
+  ("th" .
+   [3 0])
+  ("script" .
+   [3 0 0 2 0 0])
+  ("text" .
+   [2 0 0 0])
+  ("javascript" .
+   [0 0 0 0 1 0 0 0 0 0])
+  ("src" .
+   [3 0 0])
+  ("https" .
+   [1 0 0 0 0])
+  ("tradesTable" .
+   [1 0 0 0 0 0 0 0 0 0 0])
+  ("parseFloat" .
+   [0 0 0 0 2 0 0 0 0 0])
+  ("stake" .
+   [1 0 0 0 0])
+  ("liability" .
+   [0 0 1 0 0 1 0 0 0])
+  ("liabilityTotal" .
+   [0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("liabilityPageTotal" .
+   [0 0 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 0])
+  ("WIN" .
+   [2 0 0])
+  ("LIABILITY" .
+   [1 0 0 0 0 0 0 0 0])
+  ("PLACE" .
+   [2 0 0 0 0])
+  ("TOTAL" .
+   [2 0 0 0 0])
+  ("error" .
+   [2 0 0 0 0])
+  ("request" .
+   [1 0 0 0 0 0 0])
+  ("arr" .
+   [7 0 0])
+  ("myMap" .
+   [1 0 0 0 0])
+  ("str" .
+   [4 0 0])
+  ("removeLeadingWhitespace" .
+   [0 0 0 1 0 1 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0])
+  ("slice" .
+   [1 0 0 0 0])
+  ("newString" .
+   [1 0 0 0 0 0 0 0 0])
+  ("range" .
+   [2 0 0 0 0])
+  ("defun" .
+   [1 0 0 0 0])
+  ("interactive" .
+   [0 0 0 0 0 0 0 1 0 0 0])
+  ("insert" .
+   [8 0 0 0 0 0])
+  ("read-kbd-macro" .
+   [0 0 0 0 0 0 1 0 0 0 0 0 0 0])
+  ("square" .
+   [1 0 0 0 0 0])
+  ("functions" .
+   [0 0 0 0 0 0 0 0 1])
+  ("getGolfersNames" .
+   [0 0 0 0 0 1 0 0 0 0 0 0 0 0 0])
+  ("html" .
+   [1 0 0 0])
+  ("login" .
+   [1 0 0 0 0])
+  ("success" .
+   [0 0 0 1 0 0 0])
+  ("in" .
+   [1 0])
+  ("session" .
+   [0 0 0 0 0 1 0])
+  ("passport" .
+   [1 0 0 0 0 0 0 0])
+  ("user" .
+   [1 0 0 0])
+  ("NewbieTable" .
+   [0 0 0 0 0 1 0 0 0 0 0])
+  ("matrixData" .
+   [0 0 0 0 0 0 0 1 0 0])
+  ("newbies" .
+   [1 0 0 0 0 0 0])
+  ("h1" .
+   [1 0])
+  ("solarized" .
+   [0 0 0 0 0 0 1 0 0])
+  ("solarized-dark" .
+   [0 0 0 0 0 0 0 0 0 0 0 0 1 0])
+  ("will_win" .
+   [0 0 0 0 0 0 1 0])))

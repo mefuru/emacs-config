@@ -1,28 +1,28 @@
 
 ;; ----- smex-history -----
 (
- javascript-mode
  newline
- backward-char
- end-of-line
- make-directory
- mkdir
+ load-theme
  replace-string
+ ansi-term
+ neotree
+ whitespace-cleanup
+ replace-regexp
 )
 
 ;; ----- smex-data -----
 (
  (auto-fill-mode . 1)
- (ansi-term . 52)
- (package-install . 12)
- (replace-string . 107)
- (replace-regexp . 9)
+ (ansi-term . 65)
+ (package-install . 13)
+ (replace-string . 303)
+ (replace-regexp . 27)
  (delete-backward-char . 2)
  (ac-complete-yasnippet . 7)
- (make-directory . 13)
+ (make-directory . 17)
  (whitespace-mode . 17)
- (whitespace-cleanup . 10)
- (load-theme . 1)
+ (whitespace-cleanup . 13)
+ (load-theme . 15)
  (back-to-indentation . 3)
  (magit-log . 2)
  (magit-status . 1)
@@ -35,16 +35,25 @@
  (hs-hide-block . 3)
  (run-js . 1)
  (multi-term . 5)
- (menu-bar-mode . 1)
+ (menu-bar-mode . 2)
  (kill-whole-line . 1)
- (web-mode . 12)
- (mkdir . 3)
+ (web-mode . 38)
+ (mkdir . 10)
  (delete-file . 3)
  (blink-cursor-mode . 1)
- (package-refresh-contents . 1)
+ (package-refresh-contents . 2)
  (cider-jack-in . 1)
  (end-of-line . 1)
  (backward-char . 1)
- (newline . 1)
+ (newline . 2)
  (javascript-mode . 1)
+ (set-default-font . 1)
+ (eval-buffer . 1)
+ (eval-region . 1)
+ (project-explorer-open . 3)
+ (run-scheme . 8)
+ (scheme-compile-region . 1)
+ (make-face . 2)
+ (neotree . 9)
+ (unix-sync . 1)
 )

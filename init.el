@@ -69,10 +69,24 @@
   (backward-char))
 
 ;; inserts js throw if error in callback
-(defun js-throw-error () 
+(defun js-throw-error ()
   (interactive)
   (insert "if (err) throw err;"))
+
+;; inserts blank React component
+(defun insert-react-component ()
+  (interactive)
+  (insert "var <COMPONENT NAME> = React.createClass({")(newline)
+  (insert "render: function() {")(newline)
+  (insert "return (")(newline)
+  (insert "<div className=''>")(newline)
+  (insert "<h1>Hello beti</h1>")(newline)
+  (insert "</div>")(newline)
+  (insert ");")(newline)
+  (insert "}")(newline)
+  (insert "});"))(newline)
   
+
 ;; ------------
 ;; -- Macros --
 ;; ------------
@@ -97,6 +111,8 @@
 (global-set-key (kbd "C-h") 'delete-backward-char)
 (global-set-key (kbd "M-h") 'backward-kill-word)
 
+(global-set-key (kbd "C-x g") 'goto-line)
+
 (global-set-key [delete] 'delete-char)
 (global-set-key [M-delete] 'kill-word)
 
@@ -110,9 +126,10 @@
 ;; This is your old M-x.
 (global-set-key (kbd "C-c C-c M-x") 'execute-extended-command)
 
-(global-set-key (read-kbd-macro "C-x l") 'insert-print) ;; insert console.log()
+(global-set-key (read-kbd-macro "C-x l") 'insert-print)
 (global-set-key (read-kbd-macro "C-x f") 'js-insert-function)
 (global-set-key (read-kbd-macro "C-x e") 'js-throw-error)
+(global-set-key (read-kbd-macro "C-x r") 'insert-react-component)
 
 ;; ELPA (emacs lisp package archive)
 (when (>= emacs-major-version 24)
@@ -121,13 +138,9 @@
   (add-to-list 'package-archives '("melpa" . "http://melpa.milkbox.net/packages/") t)
   )
 
-;; cycling through windows in one keychord
-(global-set-key (kbd "C-S-b") 'other-window) ; TRY ace-jump
-(global-set-key (kbd "C-S-f") 'previous-multiframe-window) ; TRY ace-jump
-
 ;; cycling through buffers in one keychord
-(global-set-key (kbd "C-s-b") 'previous-buffer) ; TRY ace-jump
-(global-set-key (kbd "C-s-f") 'next-buffer) ; TRY ace-jump
+(global-set-key (kbd "C-S-b") 'previous-buffer) ; TRY ace-jump
+(global-set-key (kbd "C-S-f") 'next-buffer) ; TRY ace-jump
 
 ;; SET TRANSPARENCY
 ;;(set-frame-parameter (selected-frame) 'alpha '(<active> [<inactive>]))
@@ -161,10 +174,10 @@
 
 ;; Automatic and manual symbol highlighting for Emacs
 (require 'highlight-symbol)
-(global-set-key [(control f3)] 'highlight-symbol-at-point)
-(global-set-key [f3] 'highlight-symbol-next)
-(global-set-key [(shift f3)] 'highlight-symbol-prev)
-(global-set-key [(meta f3)] 'highlight-symbol-query-replace)
+(global-set-key [(control f5)] 'highlight-symbol-at-point)
+(global-set-key [f5] 'highlight-symbol-next)
+(global-set-key [(shift f5)] 'highlight-symbol-prev)
+(global-set-key [(meta f5)] 'highlight-symbol-query-replace)
 
 ;; ---------------------------
 ;; -- JS Mode configuration --
@@ -218,10 +231,7 @@
 ;; ---------------------------
 
 (add-to-list 'custom-theme-load-path "/Users/mehulmandania/.emacs.d/themes")
-(load-theme 'zenburn t)
-;; (load-theme 'blackboard t)
-;; (load-theme 'solarized-dark t)
-(set-default-font "-apple-Menlo-medium-normal-normal-*-14-*-*-*-m-0-iso10646-")
+(load-theme 'solarized-dark t)
 
 ;; -----------------------------------
 ;; -------------------- Navigate to the beginning of the line ---------------
@@ -283,14 +293,11 @@
 
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.phtml\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.tpl\\.php\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.[agj]sp\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.as[cp]x\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.mustache\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.djhtml\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.html?\\'" . web-mode))
-
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 
 (blink-cursor-mode 0)
 
@@ -310,3 +317,10 @@
  '(vc-annotate-background "#2B2B2B")
  '(vc-annotate-color-map (quote ((20 . "#BC8383") (40 . "#CC9393") (60 . "#DFAF8F") (80 . "#D0BF8F") (100 . "#E0CF9F") (120 . "#F0DFAF") (140 . "#5F7F5F") (160 . "#7F9F7F") (180 . "#8FB28F") (200 . "#9FC59F") (220 . "#AFD8AF") (240 . "#BFEBBF") (260 . "#93E0E3") (280 . "#6CA0A3") (300 . "#7CB8BB") (320 . "#8CD0D3") (340 . "#94BFF3") (360 . "#DC8CC3"))))
  '(vc-annotate-very-old-color "#DC8CC3"))
+
+
+(set-variable (quote scheme-program-name) "scm")
+
+;; http://www.emacswiki.org/emacs/NeoTree 
+(global-set-key [f8] 'neotree-toggle)
+(setq projectile-switch-project-action 'neotree-projectile-action)
